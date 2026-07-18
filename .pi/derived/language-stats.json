@@ -1,0 +1,30 @@
+{
+  "generator": "scan/1",
+  "languages": {
+    "javascript": {
+      "bytes": 1944,
+      "files": 1,
+      "loc": 58
+    },
+    "json": {
+      "bytes": 137851,
+      "files": 3,
+      "loc": 4214
+    },
+    "markdown": {
+      "bytes": 14673,
+      "files": 2,
+      "loc": 248
+    },
+    "typescript": {
+      "bytes": 173199,
+      "files": 62,
+      "loc": 4635
+    },
+    "unknown": {
+      "bytes": 145,
+      "files": 1,
+      "loc": 8
+    }
+  }
+}

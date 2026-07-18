@@ -1,0 +1,30 @@
+{
+  "analysis": {
+    "boundaryHints": [],
+    "grammarsDir": ""
+  },
+  "context": {
+    "maxHops": 2,
+    "maxItems": 60
+  },
+  "dirName": ".pi",
+  "host": {
+    "charsPerToken": 3.8,
+    "contextWindowTokens": 200000,
+    "outputStyle": "concise",
+    "tokenBudget": 24000
+  },
+  "scan": {
+    "followSymlinks": false,
+    "ignore": [
+      "test/fixtures/",
+      "dist/"
+    ],
+    "includeHidden": false,
+    "maxFileSizeBytes": 1500000
+  },
+  "validation": {
+    "custom": {}
+  },
+  "version": "1"
+}

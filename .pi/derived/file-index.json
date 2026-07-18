@@ -1,0 +1,4254 @@
+{
+  "files": [
+    {
+      "confidence": "low",
+      "ext": "",
+      "hash": "3b5f71730f36",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "unknown",
+      "loc": 8,
+      "path": ".gitignore",
+      "size": 145,
+      "symbols": []
+    },
+    {
+      "confidence": "low",
+      "ext": ".md",
+      "hash": "25d085883b00",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": true,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "markdown",
+      "loc": 164,
+      "path": "README.md",
+      "size": 7703,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".json",
+      "hash": "345b0c79b6dc",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "json",
+      "loc": 4144,
+      "path": "package-lock.json",
+      "size": 135946,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".json",
+      "hash": "01e9ae171a3a",
+      "imports": [],
+      "isConfig": true,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "json",
+      "loc": 45,
+      "path": "package.json",
+      "size": 1267,
+      "symbols": []
+    },
+    {
+      "confidence": "low",
+      "ext": ".md",
+      "hash": "026ea4997268",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": true,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "markdown",
+      "loc": 84,
+      "path": "project-intelligence-mcp-brief.md",
+      "size": 6970,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".mjs",
+      "hash": "18ec61bb3fdf",
+      "imports": [
+        {
+          "external": false,
+          "line": 4,
+          "module": "node:fs",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "node:url",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "node:module",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "javascript",
+      "loc": 58,
+      "path": "scripts/copy-grammars.mjs",
+      "size": 1944,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 9,
+          "name": "require"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 10,
+          "name": "root"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 11,
+          "name": "outDir"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 14,
+          "name": "copyIfPresent"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 23,
+          "name": "coreCopied"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 37,
+          "name": "grammarCount"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "7096ca77995b",
+      "imports": [
+        {
+          "external": false,
+          "line": 1,
+          "module": "../tools/registry.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": true,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 95,
+      "path": "src/cli/main.ts",
+      "size": 2929,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 13,
+          "name": "main"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 43,
+          "name": "ALIASES"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 45,
+          "name": "parseArgs"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 64,
+          "name": "coerce"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 76,
+          "name": "printHelp"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "c1a991f8edfb",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../util/logger.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 88,
+      "path": "src/config/config.ts",
+      "size": 3570,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 11,
+          "name": "HostConfigSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 22,
+          "name": "ScanConfigSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 31,
+          "name": "AnalysisConfigSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 38,
+          "name": "ValidationConfigSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 45,
+          "name": "ContextConfigSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 52,
+          "name": "ConfigSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 62,
+          "name": "Config"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 65,
+          "name": "defaultConfig"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 74,
+          "name": "loadConfig"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "e5cbece72b60",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "web-tree-sitter",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../domain/schemas.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../scan/walk.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "./grammars.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "./extract.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "./fallback.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../../util/logger.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 60,
+      "path": "src/core/analyze/analyzer.ts",
+      "size": 2050,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 8,
+          "name": "FileAnalysis"
+        },
+        {
+          "exported": true,
+          "kind": "class",
+          "line": 20,
+          "name": "Analyzer"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "1af7b1916b5b",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "web-tree-sitter",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../domain/schemas.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 293,
+      "path": "src/core/analyze/extract.ts",
+      "size": 8840,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "type",
+          "line": 10,
+          "name": "Node"
+        },
+        {
+          "exported": false,
+          "kind": "interface",
+          "line": 12,
+          "name": "LanguageSpec"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 21,
+          "name": "IDENTIFIER_TYPES"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 31,
+          "name": "STRING_TYPES"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 39,
+          "name": "GENERIC_SPEC"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 68,
+          "name": "JS_SPEC"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 84,
+          "name": "PY_SPEC"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 94,
+          "name": "GO_SPEC"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 107,
+          "name": "RUST_SPEC"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 122,
+          "name": "JAVA_SPEC"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 134,
+          "name": "RUBY_SPEC"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 145,
+          "name": "SPECS"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 156,
+          "name": "specFor"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 160,
+          "name": "firstIdentifier"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 169,
+          "name": "stripQuotes"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 173,
+          "name": "firstStringDescendant"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 181,
+          "name": "isExported"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 198,
+          "name": "extractImports"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 223,
+          "name": "moduleFromImport"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 238,
+          "name": "extractSymbols"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 245,
+          "name": "collect"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "61c74faaadbe",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "../../domain/schemas.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 66,
+      "path": "src/core/analyze/fallback.ts",
+      "size": 2562,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 9,
+          "name": "IMPORT_PATTERNS"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 19,
+          "name": "SYMBOL_PATTERNS"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 28,
+          "name": "lineOf"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 34,
+          "name": "fallbackImports"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 52,
+          "name": "fallbackSymbols"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "4e4552ae6701",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "web-tree-sitter",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "node:url",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "node:fs",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../../domain/languages.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../../util/logger.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 91,
+      "path": "src/core/analyze/grammars.ts",
+      "size": 3056,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 14,
+          "name": "initPromise"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 15,
+          "name": "grammarCache"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 17,
+          "name": "bundledGrammarsDir"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 33,
+          "name": "resolveGrammarsDir"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 37,
+          "name": "ensureInit"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 52,
+          "name": "loadGrammar"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 81,
+          "name": "newParser"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 87,
+          "name": "clearGrammarCache"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "eab7adc73c0e",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../domain/schemas.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 10,
+          "module": "../../store/authored.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 11,
+          "module": "../../domain/version.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 12,
+          "module": "../../util/tokens.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 13,
+          "module": "../../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 14,
+          "module": "./tokenize.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 363,
+      "path": "src/core/context/compile.ts",
+      "size": 12354,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 16,
+          "name": "CompileInput"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 34,
+          "name": "W"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 49,
+          "name": "OVERSIZE_FRACTION"
+        },
+        {
+          "exported": false,
+          "kind": "interface",
+          "line": 51,
+          "name": "Candidate"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 61,
+          "name": "emptyBreakdown"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 65,
+          "name": "total"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 75,
+          "name": "compileContext"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 289,
+          "name": "fileDegrees"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 298,
+          "name": "buildAdjacency"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 311,
+          "name": "expandFromSeeds"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 334,
+          "name": "buildContent"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 351,
+          "name": "signatureView"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "3d2e2ea6081f",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 48,
+      "path": "src/core/context/tokenize.ts",
+      "size": 2034,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 5,
+          "name": "STOPWORDS"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 14,
+          "name": "splitIdentifier"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 24,
+          "name": "tokenizeTask"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 35,
+          "name": "stem"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 42,
+          "name": "stemSet"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "1d9f97cbad8e",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../domain/schemas.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../../domain/version.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../../util/fsx.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 86,
+      "path": "src/core/discover/catalog.ts",
+      "size": 2766,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 5,
+          "name": "OwnershipRule"
+        },
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 10,
+          "name": "ComponentCatalog"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 20,
+          "name": "SERVICE_DIR_HINTS"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 27,
+          "name": "buildComponentCatalog"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 70,
+          "name": "parseCodeowners"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "42d274ece1e9",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "../../util/exec.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 53,
+      "path": "src/core/evidence/diff.ts",
+      "size": 1725,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 2,
+          "name": "DiffEvidence"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 15,
+          "name": "captureDiff"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 39,
+          "name": "parseNumstat"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "cb0cf914c967",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "../../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../util/exec.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 61,
+      "path": "src/core/evidence/validate.ts",
+      "size": 2093,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 3,
+          "name": "CheckResult"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 19,
+          "name": "resolveChecks"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 35,
+          "name": "runValidation"
+        }
+      ]
+    },
+    {
+      "confidence": "none",
+      "ext": ".ts",
+      "hash": "fb352b78089c",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 0,
+      "path": "src/core/graph/architecture.ts",
+      "size": 4468,
+      "symbols": []
+    },
+    {
+      "confidence": "none",
+      "ext": ".ts",
+      "hash": "3f709c9eb2ab",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 0,
+      "path": "src/core/graph/dependencies.ts",
+      "size": 5468,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "c97c292e2bd2",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../../domain/schemas.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 111,
+      "path": "src/core/graph/manifests.ts",
+      "size": 4237,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "type",
+          "line": 5,
+          "name": "ExternalDep"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 12,
+          "name": "collectExternalDeps"
+        },
+        {
+          "exported": false,
+          "kind": "type",
+          "line": 33,
+          "name": "Add"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 35,
+          "name": "parsePackageJson"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 53,
+          "name": "parseRequirementsTxt"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 64,
+          "name": "parsePyproject"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 75,
+          "name": "parseGoMod"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 92,
+          "name": "parseCargoToml"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 103,
+          "name": "parseGemfile"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "3495119fc594",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 22,
+      "path": "src/core/graph/modules.ts",
+      "size": 812,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 9,
+          "name": "ROOT_MODULE"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 11,
+          "name": "moduleIdForPath"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "7f2101ef7663",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 74,
+      "path": "src/core/graph/tarjan.ts",
+      "size": 2490,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 6,
+          "name": "findCycles"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "21c35ebd2cf5",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "node:fs/promises",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../../util/json.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../../store/manifest.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../../store/layout.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 161,
+      "path": "src/core/init/scaffold.ts",
+      "size": 5672,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 8,
+          "name": "ScaffoldResult"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 19,
+          "name": "scaffold"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 57,
+          "name": "isInitialized"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 61,
+          "name": "seedOwnership"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 72,
+          "name": "isEmptyDir"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 80,
+          "name": "README"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 99,
+          "name": "ADR_GUIDE"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 119,
+          "name": "GLOSSARY_STUB"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 127,
+          "name": "OWNERSHIP_STUB"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 133,
+          "name": "INVARIANTS_STUB"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 140,
+          "name": "POLICIES_STUB"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 145,
+          "name": "REQUIREMENTS_STUB"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 150,
+          "name": "ROADMAP_STUB"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "2346619f3303",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "./numbering.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 52,
+      "path": "src/core/memory/decisions.ts",
+      "size": 1459,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 5,
+          "name": "DecisionInput"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 21,
+          "name": "recordDecision"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "cb9740c8b516",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "node:fs/promises",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../../util/json.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "./numbering.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 69,
+      "path": "src/core/memory/invariants.ts",
+      "size": 2443,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 7,
+          "name": "InvariantInput"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 20,
+          "name": "recordInvariant"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 49,
+          "name": "rebuildInvariantsIndex"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "0428b759e6df",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:fs/promises",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 36,
+      "path": "src/core/memory/numbering.ts",
+      "size": 1004,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 8,
+          "name": "pad"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 12,
+          "name": "nextNumber"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 26,
+          "name": "slugify"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "0c76af4a967e",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "./numbering.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 42,
+      "path": "src/core/memory/session.ts",
+      "size": 1297,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 5,
+          "name": "SessionNote"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 19,
+          "name": "appendSession"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "8e495c364416",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "node:fs/promises",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../../util/json.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../pipeline.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "../discover/catalog.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 8,
+          "module": "../../store/store.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 14,
+          "module": "./numbering.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 15,
+          "module": "./decisions.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 234,
+      "path": "src/core/memory/sprint.ts",
+      "size": 8584,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 18,
+          "name": "SprintSnapshot"
+        },
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 29,
+          "name": "SprintNarrative"
+        },
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 37,
+          "name": "SprintDelta"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 54,
+          "name": "diffSets"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 63,
+          "name": "computeDelta"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 106,
+          "name": "readInvariantStatements"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 123,
+          "name": "readLatestSnapshot"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 148,
+          "name": "sprintCheckpoint"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 199,
+          "name": "renderSprint"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "58eabafb4852",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../domain/schemas.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "./scan/scan.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "./graph/dependencies.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "./graph/architecture.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 28,
+      "path": "src/core/pipeline.ts",
+      "size": 1075,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 11,
+          "name": "Analysis"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 17,
+          "name": "runScan"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 21,
+          "name": "runAnalysis"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "2cf91ce888bd",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "../../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../domain/schemas.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../../domain/version.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../../util/hash.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../../util/logger.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "./walk.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../analyze/analyzer.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "../analyze/grammars.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 68,
+      "path": "src/core/scan/scan.ts",
+      "size": 2262,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 15,
+          "name": "scanRepository"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "aa628bfed8d2",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:fs/promises",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "ignore",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "ignore",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../../util/hash.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../../domain/languages.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "../../config/config.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 221,
+      "path": "src/core/scan/walk.ts",
+      "size": 5741,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 10,
+          "name": "DEFAULT_IGNORE"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 34,
+          "name": "TEST_HINTS"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 43,
+          "name": "DOC_HINTS"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 45,
+          "name": "CONFIG_FILES"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 61,
+          "name": "ENTRYPOINT_HINTS"
+        },
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 69,
+          "name": "RawFile"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 87,
+          "name": "toPosix"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 91,
+          "name": "isBinaryBuffer"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 97,
+          "name": "classify"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 107,
+          "name": "buildIgnore"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 122,
+          "name": "walkRepository"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 175,
+          "name": "readOneFile"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "3e705ec47b1e",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 72,
+      "path": "src/domain/languages.ts",
+      "size": 3966,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 9,
+          "name": "LanguageDef"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 17,
+          "name": "LANGUAGES"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 50,
+          "name": "EXT_TO_LANG"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 55,
+          "name": "BY_ID"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 57,
+          "name": "UNKNOWN_LANGUAGE"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 60,
+          "name": "languageForExtension"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 64,
+          "name": "languageById"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 68,
+          "name": "grammarForLanguage"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "3b369a40437c",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 182,
+      "path": "src/domain/schemas.ts",
+      "size": 5637,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 9,
+          "name": "Confidence"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 10,
+          "name": "Confidence"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 12,
+          "name": "SymbolSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 18,
+          "name": "SymbolRecord"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 20,
+          "name": "ImportRefSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 28,
+          "name": "ImportRef"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 30,
+          "name": "FileRecordSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 45,
+          "name": "FileRecord"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 47,
+          "name": "LanguageStatSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 52,
+          "name": "LanguageStat"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 54,
+          "name": "RepoScanSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 63,
+          "name": "RepoScan"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 67,
+          "name": "DepNodeSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 72,
+          "name": "DepEdgeSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 76,
+          "name": "ExternalDepSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 81,
+          "name": "DependencyGraphSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 89,
+          "name": "DependencyGraph"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 93,
+          "name": "ModuleSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 99,
+          "name": "ModuleEdgeSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 104,
+          "name": "ModuleMetricSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 110,
+          "name": "ArchitectureGraphSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 118,
+          "name": "ArchitectureGraph"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 122,
+          "name": "ContextItemKind"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 131,
+          "name": "ContextItemKind"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 133,
+          "name": "ScoreBreakdownSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 141,
+          "name": "ScoreBreakdown"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 143,
+          "name": "ContextItemSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 153,
+          "name": "ContextItem"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 155,
+          "name": "ExcludedItemSchema"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 162,
+          "name": "ContextManifestSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 172,
+          "name": "ContextManifest"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 174,
+          "name": "CompiledContextSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 180,
+          "name": "CompiledContext"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "80834aed2744",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 16,
+      "path": "src/domain/version.ts",
+      "size": 525,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 6,
+          "name": "GENERATORS"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 14,
+          "name": "SCHEMA_VERSION"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "031cf0b8918c",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": true,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 20,
+      "path": "src/index.ts",
+      "size": 925,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "33c12d3729d3",
+      "imports": [
+        {
+          "external": false,
+          "line": 1,
+          "module": "@modelcontextprotocol/sdk/server/stdio.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "./server.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../util/logger.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": true,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 22,
+      "path": "src/server/main.ts",
+      "size": 687,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 10,
+          "name": "main"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "af3a2783ec53",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "@modelcontextprotocol/sdk/server/mcp.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../tools/registry.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../util/logger.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 47,
+      "path": "src/server/server.ts",
+      "size": 1662,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 9,
+          "name": "createServer"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "51ba26d350f2",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "node:fs/promises",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../domain/schemas.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "./layout.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 66,
+      "path": "src/store/authored.ts",
+      "size": 2236,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 6,
+          "name": "KnowledgeDoc"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 19,
+          "name": "readAuthoredKnowledge"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 47,
+          "name": "listMarkdown"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 56,
+          "name": "firstHeading"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 61,
+          "name": "toRepoRel"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "2eaf70a31e67",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 81,
+      "path": "src/store/layout.ts",
+      "size": 2873,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 13,
+          "name": "piLayout"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 59,
+          "name": "PiLayout"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 62,
+          "name": "scaffoldDirs"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "af01408518aa",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../util/json.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../domain/version.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "./layout.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 68,
+      "path": "src/store/manifest.ts",
+      "size": 2320,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 12,
+          "name": "ManifestSchema"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 20,
+          "name": "Manifest"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 22,
+          "name": "emptyManifest"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 32,
+          "name": "readManifest"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 42,
+          "name": "writeManifest"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 51,
+          "name": "updateManifest"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "973c9b43634b",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "../domain/schemas.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../core/discover/catalog.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 167,
+      "path": "src/store/render.ts",
+      "size": 6008,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 16,
+          "name": "header"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 20,
+          "name": "pct"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 24,
+          "name": "renderRepositorySummary"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 56,
+          "name": "renderLanguageStats"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 70,
+          "name": "renderDependencyGraph"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 106,
+          "name": "renderArchitecture"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 145,
+          "name": "renderComponentCatalog"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 161,
+          "name": "countBy"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "43d449d384e1",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../domain/schemas.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../core/discover/catalog.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../util/fsx.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../util/json.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "./layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "./render.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 107,
+      "path": "src/store/store.ts",
+      "size": 3526,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 22,
+          "name": "writeJsonMd"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 33,
+          "name": "persistScan"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 59,
+          "name": "persistDependencyGraph"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 68,
+          "name": "persistArchitecture"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 77,
+          "name": "persistComponentCatalog"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 87,
+          "name": "summarize"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 103,
+          "name": "relPaths"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "a0c88de0bf26",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "./types.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../store/authored.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../core/pipeline.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../core/context/compile.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 68,
+      "path": "src/tools/context.ts",
+      "size": 2735,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 13,
+          "name": "contextCompile"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "8eeeb91b00d4",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "./types.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../store/store.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../store/manifest.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../core/pipeline.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "../core/discover/catalog.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 48,
+      "path": "src/tools/discover.ts",
+      "size": 1867,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 13,
+          "name": "discoverComponents"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "8c92f07538f5",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "./types.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../store/store.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../core/evidence/validate.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../core/evidence/diff.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "../core/memory/session.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 89,
+      "path": "src/tools/evidence.ts",
+      "size": 3675,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 13,
+          "name": "validateRun"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 65,
+          "name": "evidenceDiff"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "18ea5ce90509",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "./types.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../store/store.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../store/manifest.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../core/pipeline.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "../core/graph/dependencies.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 8,
+          "module": "../core/graph/architecture.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 98,
+      "path": "src/tools/graph.ts",
+      "size": 3811,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 14,
+          "name": "graphDependencies"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 54,
+          "name": "graphArchitecture"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "a52cbe7946aa",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "./types.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../core/init/scaffold.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../store/store.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 31,
+      "path": "src/tools/intel.ts",
+      "size": 1169,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 9,
+          "name": "intelInit"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "c36c1dd5b419",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "./types.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../store/store.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../core/init/scaffold.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../core/memory/decisions.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "../core/memory/invariants.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 8,
+          "module": "../core/memory/session.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 98,
+      "path": "src/tools/knowledge.ts",
+      "size": 4126,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 10,
+          "name": "requireInit"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 20,
+          "name": "decisionRecord"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 51,
+          "name": "invariantRecord"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 73,
+          "name": "memorySessionAppend"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "f1f93ab938bd",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "./types.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../store/manifest.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../store/store.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 12,
+          "module": "../core/pipeline.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 13,
+          "module": "../core/discover/catalog.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 14,
+          "module": "../core/init/scaffold.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 15,
+          "module": "../domain/version.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 115,
+      "path": "src/tools/lifecycle.ts",
+      "size": 4702,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 22,
+          "name": "intelStatus"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 61,
+          "name": "ARTIFACTS"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 67,
+          "name": "intelRegenerate"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "6024aa9b2ddc",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "./types.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "./intel.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "./lifecycle.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "./repo.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "./graph.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "./discover.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "./context.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "./evidence.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 8,
+          "module": "./knowledge.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 9,
+          "module": "./sprint.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 45,
+      "path": "src/tools/registry.ts",
+      "size": 1484,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 17,
+          "name": "TOOLS"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 39,
+          "name": "toolByName"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "ceef1869533e",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "./types.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../store/store.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../store/manifest.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../core/pipeline.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 56,
+      "path": "src/tools/repo.ts",
+      "size": 2108,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 12,
+          "name": "repoScan"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "007e6a9f2532",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "./types.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../store/layout.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../store/store.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../core/init/scaffold.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../core/memory/sprint.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 57,
+      "path": "src/tools/sprint.ts",
+      "size": 2633,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 14,
+          "name": "sprintCheckpointTool"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "b3a55c28e827",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "zod",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 44,
+      "path": "src/tools/types.ts",
+      "size": 1626,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 9,
+          "name": "ToolDef"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 17,
+          "name": "defineTool"
+        },
+        {
+          "exported": true,
+          "kind": "type",
+          "line": 27,
+          "name": "AnyTool"
+        },
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 30,
+          "name": "Envelope"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 35,
+          "name": "ok"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 40,
+          "name": "RepoInput"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "60354b75b6be",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:child_process",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 79,
+      "path": "src/util/exec.ts",
+      "size": 2336,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "interface",
+          "line": 2,
+          "name": "ExecResult"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 20,
+          "name": "runCommand"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 69,
+          "name": "clamp"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 74,
+          "name": "tailLines"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "d78ae6d328f3",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:fs/promises",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "node:path",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 37,
+      "path": "src/util/fsx.ts",
+      "size": 1047,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 4,
+          "name": "ensureDir"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 13,
+          "name": "writeFileAtomic"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 20,
+          "name": "readTextIfExists"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 28,
+          "name": "pathExists"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "5c2a108ddb0f",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:crypto",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 25,
+      "path": "src/util/hash.ts",
+      "size": 779,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 3,
+          "name": "sha256"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 8,
+          "name": "shortHash"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 16,
+          "name": "aggregateHash"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "c6fea085054f",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 24,
+      "path": "src/util/json.ts",
+      "size": 909,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 8,
+          "name": "canonicalJson"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 12,
+          "name": "sortKeys"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "36483e35f337",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 49,
+      "path": "src/util/logger.ts",
+      "size": 1710,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "type",
+          "line": 6,
+          "name": "Level"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 8,
+          "name": "ORDER"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 10,
+          "name": "threshold"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 15,
+          "name": "emit"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 23,
+          "name": "safeJson"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 31,
+          "name": "log"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 39,
+          "name": "timed"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "e949a1d763f1",
+      "imports": [],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 15,
+      "path": "src/util/tokens.ts",
+      "size": 686,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 9,
+          "name": "estimateTokens"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "1c711bd06c6b",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "vitest",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../src/core/pipeline.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../src/core/context/compile.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../src/config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "./helpers.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": true,
+      "lang": "typescript",
+      "loc": 47,
+      "path": "test/context.test.ts",
+      "size": 1741,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 6,
+          "name": "compile"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "4037ae45fd0d",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "vitest",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../src/core/scan/scan.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../src/core/graph/dependencies.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../src/core/graph/architecture.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../src/config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../src/util/json.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "./helpers.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": true,
+      "lang": "typescript",
+      "loc": 29,
+      "path": "test/determinism.test.ts",
+      "size": 1072,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "47285f5dd800",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "vitest",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../src/core/scan/scan.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../src/core/graph/dependencies.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../src/core/graph/architecture.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../src/config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "./helpers.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": true,
+      "lang": "typescript",
+      "loc": 46,
+      "path": "test/graph.test.ts",
+      "size": 2023,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "900291c1d9e0",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "node:url",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": true,
+      "lang": "typescript",
+      "loc": 13,
+      "path": "test/helpers.ts",
+      "size": 469,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 3,
+          "name": "here"
+        },
+        {
+          "exported": true,
+          "kind": "const",
+          "line": 6,
+          "name": "SAMPLE_REPO"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 9,
+          "name": "tmpRepoPath"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "bde3b85d7cb7",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "vitest",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../src/core/scan/scan.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../src/config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "./helpers.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": true,
+      "lang": "typescript",
+      "loc": 53,
+      "path": "test/scan.test.ts",
+      "size": 2086,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "6269a8f5edee",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "vitest",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "node:fs/promises",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "./helpers.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../src/tools/intel.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../src/tools/lifecycle.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../src/tools/knowledge.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "../src/tools/evidence.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 8,
+          "module": "../src/tools/sprint.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 9,
+          "module": "../src/util/fsx.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": true,
+      "lang": "typescript",
+      "loc": 108,
+      "path": "test/tools.test.ts",
+      "size": 4428,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 11,
+          "name": "REPO"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "21e742072ccd",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "vitest",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../src/core/graph/tarjan.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../src/core/context/tokenize.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../src/util/json.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "../src/core/graph/modules.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": true,
+      "lang": "typescript",
+      "loc": 60,
+      "path": "test/unit.test.ts",
+      "size": 1934,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".json",
+      "hash": "57df6caaf667",
+      "imports": [],
+      "isConfig": true,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "json",
+      "loc": 25,
+      "path": "tsconfig.json",
+      "size": 638,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "a08299919acf",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "tsup",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 19,
+      "path": "tsup.config.ts",
+      "size": 454,
+      "symbols": []
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "e069478b02ca",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "vitest/config",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": false,
+      "lang": "typescript",
+      "loc": 12,
+      "path": "vitest.config.ts",
+      "size": 233,
+      "symbols": []
+    }
+  ],
+  "generator": "scan/1"
+}

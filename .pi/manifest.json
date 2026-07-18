@@ -1,0 +1,12 @@
+{
+  "dirName": ".pi",
+  "generators": {
+    "architecture": "arch/1",
+    "componentCatalog": "catalog/1",
+    "dependencyGraph": "depgraph/1",
+    "scan": "scan/1"
+  },
+  "lastScanHash": "34335482098ca60f",
+  "schemaVersion": "1",
+  "updatedAt": "2026-07-17T17:49:34.639Z"
+}

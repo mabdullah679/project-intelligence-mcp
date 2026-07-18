@@ -1,0 +1,1154 @@
+{
+  "cycles": [],
+  "edges": [
+    {
+      "from": "src/cli/main.ts",
+      "to": "src/tools/registry.ts"
+    },
+    {
+      "from": "src/config/config.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/config/config.ts",
+      "to": "src/util/logger.ts"
+    },
+    {
+      "from": "src/core/analyze/analyzer.ts",
+      "to": "src/core/analyze/extract.ts"
+    },
+    {
+      "from": "src/core/analyze/analyzer.ts",
+      "to": "src/core/analyze/fallback.ts"
+    },
+    {
+      "from": "src/core/analyze/analyzer.ts",
+      "to": "src/core/analyze/grammars.ts"
+    },
+    {
+      "from": "src/core/analyze/analyzer.ts",
+      "to": "src/core/scan/walk.ts"
+    },
+    {
+      "from": "src/core/analyze/analyzer.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/core/analyze/analyzer.ts",
+      "to": "src/util/logger.ts"
+    },
+    {
+      "from": "src/core/analyze/extract.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/core/analyze/fallback.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/core/analyze/grammars.ts",
+      "to": "src/domain/languages.ts"
+    },
+    {
+      "from": "src/core/analyze/grammars.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/core/analyze/grammars.ts",
+      "to": "src/util/logger.ts"
+    },
+    {
+      "from": "src/core/context/compile.ts",
+      "to": "src/core/context/tokenize.ts"
+    },
+    {
+      "from": "src/core/context/compile.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/core/context/compile.ts",
+      "to": "src/domain/version.ts"
+    },
+    {
+      "from": "src/core/context/compile.ts",
+      "to": "src/store/authored.ts"
+    },
+    {
+      "from": "src/core/context/compile.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/core/context/compile.ts",
+      "to": "src/util/tokens.ts"
+    },
+    {
+      "from": "src/core/discover/catalog.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/core/discover/catalog.ts",
+      "to": "src/domain/version.ts"
+    },
+    {
+      "from": "src/core/discover/catalog.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/core/evidence/diff.ts",
+      "to": "src/util/exec.ts"
+    },
+    {
+      "from": "src/core/evidence/validate.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/core/evidence/validate.ts",
+      "to": "src/util/exec.ts"
+    },
+    {
+      "from": "src/core/graph/manifests.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/core/graph/manifests.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/core/init/scaffold.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/core/init/scaffold.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/core/init/scaffold.ts",
+      "to": "src/store/manifest.ts"
+    },
+    {
+      "from": "src/core/init/scaffold.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/core/init/scaffold.ts",
+      "to": "src/util/json.ts"
+    },
+    {
+      "from": "src/core/memory/decisions.ts",
+      "to": "src/core/memory/numbering.ts"
+    },
+    {
+      "from": "src/core/memory/decisions.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/core/memory/decisions.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/core/memory/invariants.ts",
+      "to": "src/core/memory/numbering.ts"
+    },
+    {
+      "from": "src/core/memory/invariants.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/core/memory/invariants.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/core/memory/invariants.ts",
+      "to": "src/util/json.ts"
+    },
+    {
+      "from": "src/core/memory/session.ts",
+      "to": "src/core/memory/numbering.ts"
+    },
+    {
+      "from": "src/core/memory/session.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/core/memory/session.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/core/memory/sprint.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/core/memory/sprint.ts",
+      "to": "src/core/discover/catalog.ts"
+    },
+    {
+      "from": "src/core/memory/sprint.ts",
+      "to": "src/core/memory/decisions.ts"
+    },
+    {
+      "from": "src/core/memory/sprint.ts",
+      "to": "src/core/memory/numbering.ts"
+    },
+    {
+      "from": "src/core/memory/sprint.ts",
+      "to": "src/core/pipeline.ts"
+    },
+    {
+      "from": "src/core/memory/sprint.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/core/memory/sprint.ts",
+      "to": "src/store/store.ts"
+    },
+    {
+      "from": "src/core/memory/sprint.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/core/memory/sprint.ts",
+      "to": "src/util/json.ts"
+    },
+    {
+      "from": "src/core/pipeline.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/core/pipeline.ts",
+      "to": "src/core/graph/architecture.ts"
+    },
+    {
+      "from": "src/core/pipeline.ts",
+      "to": "src/core/graph/dependencies.ts"
+    },
+    {
+      "from": "src/core/pipeline.ts",
+      "to": "src/core/scan/scan.ts"
+    },
+    {
+      "from": "src/core/pipeline.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/core/scan/scan.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/core/scan/scan.ts",
+      "to": "src/core/analyze/analyzer.ts"
+    },
+    {
+      "from": "src/core/scan/scan.ts",
+      "to": "src/core/analyze/grammars.ts"
+    },
+    {
+      "from": "src/core/scan/scan.ts",
+      "to": "src/core/scan/walk.ts"
+    },
+    {
+      "from": "src/core/scan/scan.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/core/scan/scan.ts",
+      "to": "src/domain/version.ts"
+    },
+    {
+      "from": "src/core/scan/scan.ts",
+      "to": "src/util/hash.ts"
+    },
+    {
+      "from": "src/core/scan/scan.ts",
+      "to": "src/util/logger.ts"
+    },
+    {
+      "from": "src/core/scan/walk.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/core/scan/walk.ts",
+      "to": "src/domain/languages.ts"
+    },
+    {
+      "from": "src/core/scan/walk.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/core/scan/walk.ts",
+      "to": "src/util/hash.ts"
+    },
+    {
+      "from": "src/server/main.ts",
+      "to": "src/server/server.ts"
+    },
+    {
+      "from": "src/server/main.ts",
+      "to": "src/util/logger.ts"
+    },
+    {
+      "from": "src/server/server.ts",
+      "to": "src/tools/registry.ts"
+    },
+    {
+      "from": "src/server/server.ts",
+      "to": "src/util/logger.ts"
+    },
+    {
+      "from": "src/store/authored.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/store/authored.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/store/authored.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/store/manifest.ts",
+      "to": "src/domain/version.ts"
+    },
+    {
+      "from": "src/store/manifest.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/store/manifest.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/store/manifest.ts",
+      "to": "src/util/json.ts"
+    },
+    {
+      "from": "src/store/render.ts",
+      "to": "src/core/discover/catalog.ts"
+    },
+    {
+      "from": "src/store/render.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/store/store.ts",
+      "to": "src/core/discover/catalog.ts"
+    },
+    {
+      "from": "src/store/store.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/store/store.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/store/store.ts",
+      "to": "src/store/render.ts"
+    },
+    {
+      "from": "src/store/store.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "src/store/store.ts",
+      "to": "src/util/json.ts"
+    },
+    {
+      "from": "src/tools/context.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/tools/context.ts",
+      "to": "src/core/context/compile.ts"
+    },
+    {
+      "from": "src/tools/context.ts",
+      "to": "src/core/pipeline.ts"
+    },
+    {
+      "from": "src/tools/context.ts",
+      "to": "src/store/authored.ts"
+    },
+    {
+      "from": "src/tools/context.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/tools/context.ts",
+      "to": "src/tools/types.ts"
+    },
+    {
+      "from": "src/tools/discover.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/tools/discover.ts",
+      "to": "src/core/discover/catalog.ts"
+    },
+    {
+      "from": "src/tools/discover.ts",
+      "to": "src/core/pipeline.ts"
+    },
+    {
+      "from": "src/tools/discover.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/tools/discover.ts",
+      "to": "src/store/manifest.ts"
+    },
+    {
+      "from": "src/tools/discover.ts",
+      "to": "src/store/store.ts"
+    },
+    {
+      "from": "src/tools/discover.ts",
+      "to": "src/tools/types.ts"
+    },
+    {
+      "from": "src/tools/evidence.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/tools/evidence.ts",
+      "to": "src/core/evidence/diff.ts"
+    },
+    {
+      "from": "src/tools/evidence.ts",
+      "to": "src/core/evidence/validate.ts"
+    },
+    {
+      "from": "src/tools/evidence.ts",
+      "to": "src/core/memory/session.ts"
+    },
+    {
+      "from": "src/tools/evidence.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/tools/evidence.ts",
+      "to": "src/store/store.ts"
+    },
+    {
+      "from": "src/tools/evidence.ts",
+      "to": "src/tools/types.ts"
+    },
+    {
+      "from": "src/tools/graph.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/tools/graph.ts",
+      "to": "src/core/graph/architecture.ts"
+    },
+    {
+      "from": "src/tools/graph.ts",
+      "to": "src/core/graph/dependencies.ts"
+    },
+    {
+      "from": "src/tools/graph.ts",
+      "to": "src/core/pipeline.ts"
+    },
+    {
+      "from": "src/tools/graph.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/tools/graph.ts",
+      "to": "src/store/manifest.ts"
+    },
+    {
+      "from": "src/tools/graph.ts",
+      "to": "src/store/store.ts"
+    },
+    {
+      "from": "src/tools/graph.ts",
+      "to": "src/tools/types.ts"
+    },
+    {
+      "from": "src/tools/intel.ts",
+      "to": "src/core/init/scaffold.ts"
+    },
+    {
+      "from": "src/tools/intel.ts",
+      "to": "src/store/store.ts"
+    },
+    {
+      "from": "src/tools/intel.ts",
+      "to": "src/tools/types.ts"
+    },
+    {
+      "from": "src/tools/knowledge.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/tools/knowledge.ts",
+      "to": "src/core/init/scaffold.ts"
+    },
+    {
+      "from": "src/tools/knowledge.ts",
+      "to": "src/core/memory/decisions.ts"
+    },
+    {
+      "from": "src/tools/knowledge.ts",
+      "to": "src/core/memory/invariants.ts"
+    },
+    {
+      "from": "src/tools/knowledge.ts",
+      "to": "src/core/memory/session.ts"
+    },
+    {
+      "from": "src/tools/knowledge.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/tools/knowledge.ts",
+      "to": "src/store/store.ts"
+    },
+    {
+      "from": "src/tools/knowledge.ts",
+      "to": "src/tools/types.ts"
+    },
+    {
+      "from": "src/tools/lifecycle.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/tools/lifecycle.ts",
+      "to": "src/core/discover/catalog.ts"
+    },
+    {
+      "from": "src/tools/lifecycle.ts",
+      "to": "src/core/init/scaffold.ts"
+    },
+    {
+      "from": "src/tools/lifecycle.ts",
+      "to": "src/core/pipeline.ts"
+    },
+    {
+      "from": "src/tools/lifecycle.ts",
+      "to": "src/domain/version.ts"
+    },
+    {
+      "from": "src/tools/lifecycle.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/tools/lifecycle.ts",
+      "to": "src/store/manifest.ts"
+    },
+    {
+      "from": "src/tools/lifecycle.ts",
+      "to": "src/store/store.ts"
+    },
+    {
+      "from": "src/tools/lifecycle.ts",
+      "to": "src/tools/types.ts"
+    },
+    {
+      "from": "src/tools/registry.ts",
+      "to": "src/tools/context.ts"
+    },
+    {
+      "from": "src/tools/registry.ts",
+      "to": "src/tools/discover.ts"
+    },
+    {
+      "from": "src/tools/registry.ts",
+      "to": "src/tools/evidence.ts"
+    },
+    {
+      "from": "src/tools/registry.ts",
+      "to": "src/tools/graph.ts"
+    },
+    {
+      "from": "src/tools/registry.ts",
+      "to": "src/tools/intel.ts"
+    },
+    {
+      "from": "src/tools/registry.ts",
+      "to": "src/tools/knowledge.ts"
+    },
+    {
+      "from": "src/tools/registry.ts",
+      "to": "src/tools/lifecycle.ts"
+    },
+    {
+      "from": "src/tools/registry.ts",
+      "to": "src/tools/repo.ts"
+    },
+    {
+      "from": "src/tools/registry.ts",
+      "to": "src/tools/sprint.ts"
+    },
+    {
+      "from": "src/tools/registry.ts",
+      "to": "src/tools/types.ts"
+    },
+    {
+      "from": "src/tools/repo.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/tools/repo.ts",
+      "to": "src/core/pipeline.ts"
+    },
+    {
+      "from": "src/tools/repo.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/tools/repo.ts",
+      "to": "src/store/manifest.ts"
+    },
+    {
+      "from": "src/tools/repo.ts",
+      "to": "src/store/store.ts"
+    },
+    {
+      "from": "src/tools/repo.ts",
+      "to": "src/tools/types.ts"
+    },
+    {
+      "from": "src/tools/sprint.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/tools/sprint.ts",
+      "to": "src/core/init/scaffold.ts"
+    },
+    {
+      "from": "src/tools/sprint.ts",
+      "to": "src/core/memory/sprint.ts"
+    },
+    {
+      "from": "src/tools/sprint.ts",
+      "to": "src/store/layout.ts"
+    },
+    {
+      "from": "src/tools/sprint.ts",
+      "to": "src/store/store.ts"
+    },
+    {
+      "from": "src/tools/sprint.ts",
+      "to": "src/tools/types.ts"
+    },
+    {
+      "from": "test/context.test.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "test/context.test.ts",
+      "to": "src/core/context/compile.ts"
+    },
+    {
+      "from": "test/context.test.ts",
+      "to": "src/core/pipeline.ts"
+    },
+    {
+      "from": "test/context.test.ts",
+      "to": "test/helpers.ts"
+    },
+    {
+      "from": "test/determinism.test.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "test/determinism.test.ts",
+      "to": "src/core/graph/architecture.ts"
+    },
+    {
+      "from": "test/determinism.test.ts",
+      "to": "src/core/graph/dependencies.ts"
+    },
+    {
+      "from": "test/determinism.test.ts",
+      "to": "src/core/scan/scan.ts"
+    },
+    {
+      "from": "test/determinism.test.ts",
+      "to": "src/util/json.ts"
+    },
+    {
+      "from": "test/determinism.test.ts",
+      "to": "test/helpers.ts"
+    },
+    {
+      "from": "test/graph.test.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "test/graph.test.ts",
+      "to": "src/core/graph/architecture.ts"
+    },
+    {
+      "from": "test/graph.test.ts",
+      "to": "src/core/graph/dependencies.ts"
+    },
+    {
+      "from": "test/graph.test.ts",
+      "to": "src/core/scan/scan.ts"
+    },
+    {
+      "from": "test/graph.test.ts",
+      "to": "test/helpers.ts"
+    },
+    {
+      "from": "test/scan.test.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "test/scan.test.ts",
+      "to": "src/core/scan/scan.ts"
+    },
+    {
+      "from": "test/scan.test.ts",
+      "to": "test/helpers.ts"
+    },
+    {
+      "from": "test/tools.test.ts",
+      "to": "src/tools/evidence.ts"
+    },
+    {
+      "from": "test/tools.test.ts",
+      "to": "src/tools/intel.ts"
+    },
+    {
+      "from": "test/tools.test.ts",
+      "to": "src/tools/knowledge.ts"
+    },
+    {
+      "from": "test/tools.test.ts",
+      "to": "src/tools/lifecycle.ts"
+    },
+    {
+      "from": "test/tools.test.ts",
+      "to": "src/tools/sprint.ts"
+    },
+    {
+      "from": "test/tools.test.ts",
+      "to": "src/util/fsx.ts"
+    },
+    {
+      "from": "test/tools.test.ts",
+      "to": "test/helpers.ts"
+    },
+    {
+      "from": "test/unit.test.ts",
+      "to": "src/core/context/tokenize.ts"
+    },
+    {
+      "from": "test/unit.test.ts",
+      "to": "src/core/graph/modules.ts"
+    },
+    {
+      "from": "test/unit.test.ts",
+      "to": "src/core/graph/tarjan.ts"
+    },
+    {
+      "from": "test/unit.test.ts",
+      "to": "src/util/json.ts"
+    }
+  ],
+  "externalDeps": [
+    {
+      "name": "@modelcontextprotocol/sdk",
+      "source": "package.json",
+      "version": "^1.12.0"
+    },
+    {
+      "name": "@types/node",
+      "source": "package.json",
+      "version": "^22.0.0"
+    },
+    {
+      "name": "ignore",
+      "source": "package.json",
+      "version": "^7.0.0"
+    },
+    {
+      "name": "tree-sitter-wasms",
+      "source": "package.json",
+      "version": "^0.1.12"
+    },
+    {
+      "name": "tsup",
+      "source": "package.json",
+      "version": "^8.3.0"
+    },
+    {
+      "name": "tsx",
+      "source": "package.json",
+      "version": "^4.19.0"
+    },
+    {
+      "name": "typescript",
+      "source": "package.json",
+      "version": "^5.7.0"
+    },
+    {
+      "name": "vitest",
+      "source": "package.json",
+      "version": "^2.1.0"
+    },
+    {
+      "name": "web-tree-sitter",
+      "source": "package.json",
+      "version": "^0.24.0"
+    },
+    {
+      "name": "zod",
+      "source": "package.json",
+      "version": "^3.24.0"
+    }
+  ],
+  "generator": "depgraph/1",
+  "nodes": [
+    {
+      "id": ".gitignore",
+      "lang": "unknown",
+      "module": "(root)"
+    },
+    {
+      "id": "README.md",
+      "lang": "markdown",
+      "module": "(root)"
+    },
+    {
+      "id": "package-lock.json",
+      "lang": "json",
+      "module": "(root)"
+    },
+    {
+      "id": "package.json",
+      "lang": "json",
+      "module": "(root)"
+    },
+    {
+      "id": "project-intelligence-mcp-brief.md",
+      "lang": "markdown",
+      "module": "(root)"
+    },
+    {
+      "id": "scripts/copy-grammars.mjs",
+      "lang": "javascript",
+      "module": "scripts"
+    },
+    {
+      "id": "src/cli/main.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/config/config.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/analyze/analyzer.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/analyze/extract.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/analyze/fallback.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/analyze/grammars.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/context/compile.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/context/tokenize.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/discover/catalog.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/evidence/diff.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/evidence/validate.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/graph/architecture.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/graph/dependencies.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/graph/manifests.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/graph/modules.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/graph/tarjan.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/init/scaffold.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/memory/decisions.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/memory/invariants.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/memory/numbering.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/memory/session.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/memory/sprint.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/pipeline.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/scan/scan.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/core/scan/walk.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/domain/languages.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/domain/schemas.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/domain/version.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/index.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/server/main.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/server/server.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/store/authored.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/store/layout.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/store/manifest.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/store/render.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/store/store.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/context.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/discover.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/evidence.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/graph.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/intel.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/knowledge.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/lifecycle.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/registry.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/repo.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/sprint.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/tools/types.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/util/exec.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/util/fsx.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/util/hash.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/util/json.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/util/logger.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "src/util/tokens.ts",
+      "lang": "typescript",
+      "module": "src"
+    },
+    {
+      "id": "test/context.test.ts",
+      "lang": "typescript",
+      "module": "test"
+    },
+    {
+      "id": "test/determinism.test.ts",
+      "lang": "typescript",
+      "module": "test"
+    },
+    {
+      "id": "test/graph.test.ts",
+      "lang": "typescript",
+      "module": "test"
+    },
+    {
+      "id": "test/helpers.ts",
+      "lang": "typescript",
+      "module": "test"
+    },
+    {
+      "id": "test/scan.test.ts",
+      "lang": "typescript",
+      "module": "test"
+    },
+    {
+      "id": "test/tools.test.ts",
+      "lang": "typescript",
+      "module": "test"
+    },
+    {
+      "id": "test/unit.test.ts",
+      "lang": "typescript",
+      "module": "test"
+    },
+    {
+      "id": "tsconfig.json",
+      "lang": "json",
+      "module": "(root)"
+    },
+    {
+      "id": "tsup.config.ts",
+      "lang": "typescript",
+      "module": "(root)"
+    },
+    {
+      "id": "vitest.config.ts",
+      "lang": "typescript",
+      "module": "(root)"
+    }
+  ],
+  "unresolvedImports": 0
+}

@@ -1,0 +1,11 @@
+// A made-up language with no tree-sitter grammar — exercises the fallback path.
+import "./other.zeta"
+require "helpers"
+
+func computeThing(x) {
+  return x * 2
+}
+
+class Widget {
+  render() { return "widget" }
+}

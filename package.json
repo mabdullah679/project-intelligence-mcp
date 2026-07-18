@@ -1,0 +1,44 @@
+{
+  "name": "project-intelligence-mcp",
+  "version": "0.1.0",
+  "description": "A reusable, deterministic Project Intelligence MCP server. Point it at any repository and it becomes that repo's engineering assistant: repository maps, dependency/architecture graphs, discovery, bounded context compilation, validation/evidence, and durable project memory. It never calls an LLM.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "pi-mcp": "./dist/server/main.js",
+    "pi-cli": "./dist/cli/main.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "grammars",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev:server": "tsx src/server/main.ts",
+    "cli": "tsx src/cli/main.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "postinstall": "node scripts/copy-grammars.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "ignore": "^7.0.0",
+    "web-tree-sitter": "^0.24.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tree-sitter-wasms": "^0.1.12",
+    "tsup": "^8.3.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "cycles": [],
+  "edges": [
+    {
+      "from": "test",
+      "to": "src",
+      "weight": 24
+    }
+  ],
+  "generator": "arch/1",
+  "layers": [
+    [
+      "(root)",
+      "scripts",
+      "test"
+    ],
+    [
+      "src"
+    ]
+  ],
+  "metrics": {
+    "(root)": {
+      "fanIn": 0,
+      "fanOut": 0,
+      "instability": 0
+    },
+    "scripts": {
+      "fanIn": 0,
+      "fanOut": 0,
+      "instability": 0
+    },
+    "src": {
+      "fanIn": 1,
+      "fanOut": 0,
+      "instability": 0
+    },
+    "test": {
+      "fanIn": 0,
+      "fanOut": 1,
+      "instability": 1
+    }
+  },
+  "modules": [
+    {
+      "fileCount": 8,
+      "id": "(root)",
+      "languages": [
+        "json",
+        "markdown",
+        "typescript",
+        "unknown"
+      ],
+      "path": "(root)"
+    },
+    {
+      "fileCount": 1,
+      "id": "scripts",
+      "languages": [
+        "javascript"
+      ],
+      "path": "scripts"
+    },
+    {
+      "fileCount": 53,
+      "id": "src",
+      "languages": [
+        "typescript"
+      ],
+      "path": "src"
+    },
+    {
+      "fileCount": 7,
+      "id": "test",
+      "languages": [
+        "typescript"
+      ],
+      "path": "test"
+    }
+  ]
+}

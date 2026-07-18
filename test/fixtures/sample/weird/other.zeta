@@ -1,0 +1,4 @@
+// Target of ./other.zeta import from thing.zeta (keeps the fixture self-contained).
+func otherThing(y) {
+  return y + 1
+}

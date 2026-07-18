@@ -1,0 +1,46 @@
+{
+  "docs": [
+    "README.md",
+    "project-intelligence-mcp-brief.md"
+  ],
+  "entrypoints": [
+    "src/cli/main.ts",
+    "src/index.ts",
+    "src/server/main.ts"
+  ],
+  "generator": "catalog/1",
+  "modules": [
+    {
+      "fileCount": 8,
+      "id": "(root)"
+    },
+    {
+      "fileCount": 1,
+      "id": "scripts"
+    },
+    {
+      "fileCount": 53,
+      "id": "src"
+    },
+    {
+      "fileCount": 7,
+      "id": "test"
+    }
+  ],
+  "owners": [],
+  "services": [
+    {
+      "path": "src/server/main.ts",
+      "reason": "entrypoint under a service directory"
+    }
+  ],
+  "tests": [
+    "test/context.test.ts",
+    "test/determinism.test.ts",
+    "test/graph.test.ts",
+    "test/helpers.ts",
+    "test/scan.test.ts",
+    "test/tools.test.ts",
+    "test/unit.test.ts"
+  ]
+}
