@@ -27,6 +27,22 @@ describe("python relative imports (#2)", () => {
     // ...and it must be counted as unresolved.
     expect(graph.unresolvedImports).toBeGreaterThanOrEqual(1);
   });
+
+  it("resolves plain absolute imports (`import a.b`, `import a.b as c`)", async () => {
+    const scan = await scanRepository(PYREL, defaultConfig());
+    const graph = await buildDependencyGraph(scan, defaultConfig());
+    const edges = new Set(graph.edges.map((e) => `${e.from}->${e.to}`));
+
+    // `import pkg.helper` and `import pkg.main as entry` must resolve to files.
+    expect(edges.has("app.py->pkg/helper.py")).toBe(true);
+    expect(edges.has("app.py->pkg/main.py")).toBe(true);
+    // `import os` is external and must not create an intra-repo edge.
+    expect([...edges].some((e) => e.startsWith("app.py->") && e.includes("os"))).toBe(false);
+
+    // The plain-import module strings are actually extracted from app.py.
+    const app = scan.files.find((f) => f.path === "app.py");
+    expect(app?.imports.map((i) => i.module).sort()).toEqual(["os", "pkg.helper", "pkg.main"]);
+  });
 });
 
 // Regression for audit finding #1: evidence_diff must not allow shell injection

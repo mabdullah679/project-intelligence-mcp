@@ -4,18 +4,18 @@
 
 
 - **Files:** 70
-- **Total size:** 326.0 KiB
+- **Total size:** 327.5 KiB
 - **Languages:** 5
 - **Test files:** 8
 - **Doc files:** 2
-- **Scan fingerprint:** `00d1ff6612de3e0a`
+- **Scan fingerprint:** `811c37c7997cb631`
 
 ## Languages
 
 | Language | Files | LOC | Bytes |
 | --- | --- | --- | --- |
-| typescript | 63 | 5045 | 53.7% |
-| json | 3 | 4214 | 41.3% |
+| typescript | 63 | 5076 | 53.9% |
+| json | 3 | 4214 | 41.1% |
 | markdown | 2 | 248 | 4.4% |
 | javascript | 1 | 58 | 0.6% |
 | unknown | 1 | 8 | 0.0% |

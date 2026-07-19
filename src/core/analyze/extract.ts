@@ -202,8 +202,9 @@ export function extractImports(root: Node, langId: string): ImportRef[] {
 
   for (const type of spec.importTypes) {
     for (const node of root.descendantsOfType(type)) {
-      const mod = moduleFromImport(node, langId);
-      if (mod) out.push({ module: mod, line: node.startPosition.row, resolved: null, external: false });
+      for (const mod of modulesFromImport(node, langId)) {
+        out.push({ module: mod, line: node.startPosition.row, resolved: null, external: false });
+      }
     }
   }
 
@@ -221,18 +222,32 @@ export function extractImports(root: Node, langId: string): ImportRef[] {
   return out;
 }
 
-function moduleFromImport(node: Node, langId: string): string | null {
-  // JS/TS: source field. Python from-import: module_name field. Others: first string / path.
+function modulesFromImport(node: Node, langId: string): string[] {
+  // JS/TS: `source` field. Python from-import: `module_name` field.
   const source = node.childForFieldName("source") ?? node.childForFieldName("module_name");
-  if (source) return stripQuotes(source.text);
+  if (source) return [stripQuotes(source.text)];
+
+  // Python plain imports: `import a`, `import a.b`, `import a.b as c`, `import a, b`.
+  // These carry the module(s) in one-or-more `name` fields (dotted_name or
+  // aliased_import), with no source/module_name field — so they were previously
+  // dropped entirely, missing absolute intra-repo imports.
+  if (langId === "python" && node.type === "import_statement") {
+    const names: string[] = [];
+    for (const nameNode of node.childrenForFieldName("name")) {
+      const dotted = nameNode.type === "aliased_import" ? nameNode.childForFieldName("name") : nameNode;
+      if (dotted) names.push(dotted.text);
+    }
+    if (names.length) return names;
+  }
+
   const str = firstStringDescendant(node);
-  if (str) return str;
+  if (str) return [str];
   // Rust `use a::b::c;` / Java `import a.b.C;` — take the path text.
   if (langId === "rust" || langId === "java") {
     const path = node.namedChildren.find((c) => c.type.includes("identifier") || c.type.includes("path"));
-    if (path) return path.text.replace(/;$/, "").trim();
+    if (path) return [path.text.replace(/;$/, "").trim()];
   }
-  return null;
+  return [];
 }
 
 /** Extract top-level symbols, unwrapping export/decorator/visibility wrappers. */

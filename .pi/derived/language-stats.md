@@ -5,7 +5,7 @@
 
 | Language | Files | LOC | Bytes |
 | --- | --- | --- | --- |
-| typescript | 63 | 5045 | 179252 |
+| typescript | 63 | 5076 | 180796 |
 | json | 3 | 4214 | 137851 |
 | markdown | 2 | 248 | 14673 |
 | javascript | 1 | 58 | 1944 |

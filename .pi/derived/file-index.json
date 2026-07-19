@@ -374,7 +374,7 @@
     {
       "confidence": "high",
       "ext": ".ts",
-      "hash": "1af7b1916b5b",
+      "hash": "cc6add5080e5",
       "imports": [
         {
           "external": false,
@@ -394,9 +394,9 @@
       "isEntrypoint": false,
       "isTest": false,
       "lang": "typescript",
-      "loc": 293,
+      "loc": 308,
       "path": "src/core/analyze/extract.ts",
-      "size": 8840,
+      "size": 9488,
       "symbols": [
         {
           "exported": false,
@@ -509,19 +509,19 @@
         {
           "exported": false,
           "kind": "function",
-          "line": 223,
-          "name": "moduleFromImport"
+          "line": 224,
+          "name": "modulesFromImport"
         },
         {
           "exported": true,
           "kind": "function",
-          "line": 238,
+          "line": 253,
           "name": "extractSymbols"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 245,
+          "line": 260,
           "name": "collect"
         }
       ]
@@ -4178,7 +4178,7 @@
     {
       "confidence": "high",
       "ext": ".ts",
-      "hash": "22a0abaf4aff",
+      "hash": "a4830e5d80c0",
       "imports": [
         {
           "external": false,
@@ -4246,9 +4246,9 @@
       "isEntrypoint": false,
       "isTest": true,
       "lang": "typescript",
-      "loc": 58,
+      "loc": 74,
       "path": "test/regression.test.ts",
-      "size": 2906,
+      "size": 3802,
       "symbols": [
         {
           "exported": false,
