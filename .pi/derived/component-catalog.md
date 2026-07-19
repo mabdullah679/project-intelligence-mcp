@@ -12,7 +12,7 @@
 - `(root)` (8 files)
 - `scripts` (1 files)
 - `src` (53 files)
-- `test` (7 files)
+- `test` (8 files)
 
 ## Entrypoints
 
@@ -26,6 +26,7 @@
 - `test/determinism.test.ts`
 - `test/graph.test.ts`
 - `test/helpers.ts`
+- `test/regression.test.ts`
 - `test/scan.test.ts`
 - `test/tools.test.ts`
 - `test/unit.test.ts`

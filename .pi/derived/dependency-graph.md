@@ -3,29 +3,29 @@
 # Dependency Graph
 
 
-- **Files (nodes):** 69
-- **Internal edges:** 187
+- **Files (nodes):** 70
+- **Internal edges:** 204
 - **External dependencies:** 10
 - **Import cycles:** 0
 - **Unresolved relative imports:** 0
 
 ## Most depended-upon files (fan-in)
 
-- `src/config/config.ts` — 18
+- `src/config/config.ts` — 21
 - `src/store/layout.ts` — 16
 - `src/util/fsx.ts` — 15
-- `src/domain/schemas.ts` — 11
+- `src/domain/schemas.ts` — 13
 - `src/tools/types.ts` — 10
 - `src/store/store.ts` — 9
 - `src/core/pipeline.ts` — 7
+- `src/domain/version.ts` — 7
 - `src/util/json.ts` — 7
+- `src/core/graph/dependencies.ts` — 6
 - `src/util/logger.ts` — 6
+- `test/helpers.ts` — 6
 - `src/core/discover/catalog.ts` — 5
-- `src/domain/version.ts` — 5
+- `src/core/scan/scan.ts` — 5
 - `src/store/manifest.ts` — 5
-- `test/helpers.ts` — 5
-- `src/core/graph/architecture.ts` — 4
-- `src/core/graph/dependencies.ts` — 4
 
 ## Files with most dependencies (fan-out)
 
@@ -35,15 +35,15 @@
 - `src/core/scan/scan.ts` — 8
 - `src/tools/graph.ts` — 8
 - `src/tools/knowledge.ts` — 8
+- `src/tools/context.ts` — 7
 - `src/tools/discover.ts` — 7
 - `src/tools/evidence.ts` — 7
 - `test/tools.test.ts` — 7
 - `src/core/analyze/analyzer.ts` — 6
 - `src/core/context/compile.ts` — 6
+- `src/core/graph/dependencies.ts` — 6
 - `src/store/store.ts` — 6
-- `src/tools/context.ts` — 6
 - `src/tools/repo.ts` — 6
-- `src/tools/sprint.ts` — 6
 
 ## Cycles
 

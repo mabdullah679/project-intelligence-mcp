@@ -84,10 +84,14 @@ export async function persistComponentCatalog(layout: PiLayout, cat: ComponentCa
   );
 }
 
-/** Compact repository summary object (distinct from the full file index). */
+/**
+ * Compact repository summary object (distinct from the full file index).
+ * Deliberately omits the absolute repoPath: this artifact is committed to git,
+ * so embedding an absolute path would make identical repo state produce different
+ * bytes across checkouts (breaking portable determinism) and leak local paths.
+ */
 function summarize(scan: RepoScan) {
   return {
-    repoPath: scan.repoPath,
     fileCount: scan.fileCount,
     totalBytes: scan.totalBytes,
     languageCount: Object.keys(scan.languages).length,

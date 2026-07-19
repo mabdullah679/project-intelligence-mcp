@@ -106,6 +106,50 @@
       "to": "src/util/exec.ts"
     },
     {
+      "from": "src/core/graph/architecture.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/core/graph/architecture.ts",
+      "to": "src/core/graph/modules.ts"
+    },
+    {
+      "from": "src/core/graph/architecture.ts",
+      "to": "src/core/graph/tarjan.ts"
+    },
+    {
+      "from": "src/core/graph/architecture.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/core/graph/architecture.ts",
+      "to": "src/domain/version.ts"
+    },
+    {
+      "from": "src/core/graph/dependencies.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "src/core/graph/dependencies.ts",
+      "to": "src/core/graph/manifests.ts"
+    },
+    {
+      "from": "src/core/graph/dependencies.ts",
+      "to": "src/core/graph/modules.ts"
+    },
+    {
+      "from": "src/core/graph/dependencies.ts",
+      "to": "src/core/graph/tarjan.ts"
+    },
+    {
+      "from": "src/core/graph/dependencies.ts",
+      "to": "src/domain/schemas.ts"
+    },
+    {
+      "from": "src/core/graph/dependencies.ts",
+      "to": "src/domain/version.ts"
+    },
+    {
       "from": "src/core/graph/manifests.ts",
       "to": "src/domain/schemas.ts"
     },
@@ -360,6 +404,10 @@
     {
       "from": "src/tools/context.ts",
       "to": "src/core/context/compile.ts"
+    },
+    {
+      "from": "src/tools/context.ts",
+      "to": "src/core/graph/dependencies.ts"
     },
     {
       "from": "src/tools/context.ts",
@@ -691,6 +739,26 @@
     },
     {
       "from": "test/graph.test.ts",
+      "to": "test/helpers.ts"
+    },
+    {
+      "from": "test/regression.test.ts",
+      "to": "src/config/config.ts"
+    },
+    {
+      "from": "test/regression.test.ts",
+      "to": "src/core/evidence/diff.ts"
+    },
+    {
+      "from": "test/regression.test.ts",
+      "to": "src/core/graph/dependencies.ts"
+    },
+    {
+      "from": "test/regression.test.ts",
+      "to": "src/core/scan/scan.ts"
+    },
+    {
+      "from": "test/regression.test.ts",
       "to": "test/helpers.ts"
     },
     {
@@ -1116,6 +1184,11 @@
     },
     {
       "id": "test/helpers.ts",
+      "lang": "typescript",
+      "module": "test"
+    },
+    {
+      "id": "test/regression.test.ts",
       "lang": "typescript",
       "module": "test"
     },

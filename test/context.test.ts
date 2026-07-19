@@ -5,7 +5,7 @@ import { defaultConfig } from "../src/config/config.js";
 import { SAMPLE_REPO } from "./helpers.js";
 
 async function compile(task: string, budgetTokens: number) {
-  const { scan, deps, arch } = await runAnalysis(SAMPLE_REPO, defaultConfig());
+  const { scan, deps } = await runAnalysis(SAMPLE_REPO, defaultConfig());
   return compileContext({
     repoPath: SAMPLE_REPO,
     task,
@@ -15,7 +15,6 @@ async function compile(task: string, budgetTokens: number) {
     maxItems: 60,
     scan,
     deps,
-    arch,
     knowledge: [],
   });
 }

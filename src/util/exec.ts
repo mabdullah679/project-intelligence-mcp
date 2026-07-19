@@ -1,4 +1,4 @@
-import { spawn } from "node:child_process";
+import { spawn, type SpawnOptions } from "node:child_process";
 
 export interface ExecResult {
   exitCode: number | null;
@@ -9,24 +9,20 @@ export interface ExecResult {
 }
 
 /**
- * Run a shell command in a working directory, capturing output. Used for
- * validation (tests/lint/build) and git diff evidence. The MCP only ever runs
- * commands that come from the repo's own config or from git — it never
- * synthesizes commands from model output.
- *
- * `startNs` is injected so duration is measured without the disallowed clock
- * helpers being needed by callers; here we use hrtime which is monotonic and
- * always available.
+ * Shared capture core. Wires stdout/stderr capture, a kill-on-timeout, and
+ * settles a single ExecResult. Never rejects — spawn errors resolve with
+ * exitCode=null so callers get a uniform shape.
  */
-export function runCommand(
+function capture(
   command: string,
-  cwd: string,
-  timeoutMs = 120_000,
-  maxBuffer = 2_000_000,
+  args: string[],
+  options: SpawnOptions,
+  timeoutMs: number,
+  maxBuffer: number,
 ): Promise<ExecResult> {
   return new Promise((resolve) => {
     const start = process.hrtime.bigint();
-    const child = spawn(command, { cwd, shell: true });
+    const child = spawn(command, args, options);
     let stdout = "";
     let stderr = "";
     let timedOut = false;
@@ -44,27 +40,50 @@ export function runCommand(
       child.kill("SIGKILL");
     }, timeoutMs);
 
-    child.on("close", (code) => {
+    const settle = (exitCode: number | null, errText = ""): void => {
       clearTimeout(timer);
       resolve({
-        exitCode: code,
+        exitCode,
         stdout,
-        stderr,
+        stderr: stderr + errText,
         durationMs: Math.round(Number(process.hrtime.bigint() - start) / 1e6),
         timedOut,
       });
-    });
-    child.on("error", (err) => {
-      clearTimeout(timer);
-      resolve({
-        exitCode: null,
-        stdout,
-        stderr: stderr + `\n[spawn error] ${String(err)}`,
-        durationMs: Math.round(Number(process.hrtime.bigint() - start) / 1e6),
-        timedOut,
-      });
-    });
+    };
+    child.on("close", (code) => settle(code));
+    child.on("error", (err) => settle(null, `\n[spawn error] ${String(err)}`));
   });
+}
+
+/**
+ * Run a full shell command string, capturing output. Use ONLY for commands that
+ * originate from the repo's own config (validation: test/lint/build). Because it
+ * uses a shell, the command string must never be built from model-supplied
+ * arguments — for those, use {@link runArgv}.
+ */
+export function runCommand(
+  command: string,
+  cwd: string,
+  timeoutMs = 120_000,
+  maxBuffer = 2_000_000,
+): Promise<ExecResult> {
+  return capture(command, [], { cwd, shell: true }, timeoutMs, maxBuffer);
+}
+
+/**
+ * Run a program with an explicit argv and NO shell. Every argument is passed
+ * literally to the program — there is no shell parsing, so arguments cannot be
+ * interpreted as commands, redirections, or metacharacters. This is the safe way
+ * to run git with model-supplied refs/paths (see evidence/diff).
+ */
+export function runArgv(
+  command: string,
+  args: string[],
+  cwd: string,
+  timeoutMs = 30_000,
+  maxBuffer = 2_000_000,
+): Promise<ExecResult> {
+  return capture(command, args, { cwd, shell: false }, timeoutMs, maxBuffer);
 }
 
 function clamp(s: string, max: number): string {

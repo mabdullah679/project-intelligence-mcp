@@ -1,6 +1,5 @@
 import { join } from "node:path";
 import type {
-  ArchitectureGraph,
   CompiledContext,
   ContextItem,
   DependencyGraph,
@@ -24,7 +23,6 @@ export interface CompileInput {
   maxItems: number;
   scan: RepoScan;
   deps: DependencyGraph;
-  arch: ArchitectureGraph;
   knowledge: KnowledgeDoc[];
 }
 
@@ -237,7 +235,7 @@ export async function compileContext(input: CompileInput): Promise<CompiledConte
     let { content, disclosure } = built;
     let tokens = estimateTokens(content, input.charsPerToken);
 
-    // Downgrade oversized code items to signatures, then summary, to fit.
+    // Downgrade an oversized code item to a signatures-only view to fit the budget.
     if (c.kind === "code" && tokens > input.budgetTokens * OVERSIZE_FRACTION && c.file) {
       const sig = signatureView(c.file);
       const sigTokens = estimateTokens(sig, input.charsPerToken);

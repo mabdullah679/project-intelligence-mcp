@@ -3,20 +3,20 @@
 # Repository Summary
 
 
-- **Files:** 69
-- **Total size:** 320.1 KiB
+- **Files:** 70
+- **Total size:** 326.0 KiB
 - **Languages:** 5
-- **Test files:** 7
+- **Test files:** 8
 - **Doc files:** 2
-- **Scan fingerprint:** `34335482098ca60f`
+- **Scan fingerprint:** `00d1ff6612de3e0a`
 
 ## Languages
 
 | Language | Files | LOC | Bytes |
 | --- | --- | --- | --- |
-| typescript | 62 | 4635 | 52.8% |
-| json | 3 | 4214 | 42.1% |
-| markdown | 2 | 248 | 4.5% |
+| typescript | 63 | 5045 | 53.7% |
+| json | 3 | 4214 | 41.3% |
+| markdown | 2 | 248 | 4.4% |
 | javascript | 1 | 58 | 0.6% |
 | unknown | 1 | 8 | 0.0% |
 

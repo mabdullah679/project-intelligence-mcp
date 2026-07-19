@@ -74,7 +74,10 @@ export const evidenceDiff = defineTool({
   }),
   async run({ repoPath, base, paths }) {
     const evidence = await captureDiff(repoPath, base, paths);
-    const warnings = evidence.isGitRepo ? [] : ["Target is not a git repository; no diff available."];
+    const warnings = [
+      ...evidence.warnings,
+      ...(evidence.isGitRepo ? [] : ["Target is not a git repository; no diff available."]),
+    ];
     return ok(
       {
         isGitRepo: evidence.isGitRepo,

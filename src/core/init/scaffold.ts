@@ -1,5 +1,4 @@
 import { join } from "node:path";
-import { readdir } from "node:fs/promises";
 import { ensureDir, pathExists, readTextIfExists, writeFileAtomic } from "../../util/fsx.js";
 import { canonicalJson } from "../../util/json.js";
 import { defaultConfig } from "../../config/config.js";
@@ -67,15 +66,6 @@ async function seedOwnership(repoPath: string): Promise<string> {
     }
   }
   return OWNERSHIP_STUB;
-}
-
-/** True if the directory has no entries (used to decide whether to seed). */
-export async function isEmptyDir(dir: string): Promise<boolean> {
-  try {
-    return (await readdir(dir)).length === 0;
-  } catch {
-    return true;
-  }
 }
 
 const README = (dirName: string) => `# Project Intelligence (\`${dirName}/\`)

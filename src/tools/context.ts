@@ -3,7 +3,8 @@ import { defineTool, ok, RepoInput } from "./types.js";
 import { loadConfig } from "../config/config.js";
 import { piLayout } from "../store/layout.js";
 import { readAuthoredKnowledge } from "../store/authored.js";
-import { runAnalysis } from "../core/pipeline.js";
+import { runScan } from "../core/pipeline.js";
+import { buildDependencyGraph } from "../core/graph/dependencies.js";
 import { compileContext } from "../core/context/compile.js";
 
 /**
@@ -37,21 +38,29 @@ export const contextCompile = defineTool({
   }),
   async run({ repoPath, task, hints, budget }) {
     const config = await loadConfig(repoPath);
-    const { scan, deps, arch } = await runAnalysis(repoPath, config);
+    // Context compilation needs scan + dependency graph only (not the architecture
+    // graph), so we build just those to avoid wasted work.
+    const scan = await runScan(repoPath, config);
+    const deps = await buildDependencyGraph(scan, config);
     const layout = piLayout(repoPath, config.dirName);
     const knowledge = await readAuthoredKnowledge(layout, repoPath);
+
+    // The token budget can never exceed the host model's context window.
+    const budgetTokens = Math.min(
+      budget?.tokens ?? config.host.tokenBudget,
+      config.host.contextWindowTokens,
+    );
 
     const compiled = await compileContext({
       repoPath,
       task,
       hints,
-      budgetTokens: budget?.tokens ?? config.host.tokenBudget,
+      budgetTokens,
       charsPerToken: budget?.tokenizerRatio ?? config.host.charsPerToken,
       maxHops: config.context.maxHops,
       maxItems: config.context.maxItems,
       scan,
       deps,
-      arch,
       knowledge,
     });
 

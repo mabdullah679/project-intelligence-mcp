@@ -5,7 +5,7 @@
     "src/index.ts",
     "src/server/main.ts"
   ],
-  "fileCount": 69,
+  "fileCount": 70,
   "generator": "scan/1",
   "languageCount": 5,
   "languages": {
@@ -25,9 +25,9 @@
       "loc": 248
     },
     "typescript": {
-      "bytes": 173199,
-      "files": 62,
-      "loc": 4635
+      "bytes": 179252,
+      "files": 63,
+      "loc": 5045
     },
     "unknown": {
       "bytes": 145,
@@ -35,8 +35,7 @@
       "loc": 8
     }
   },
-  "repoPath": "/Users/muhammadabdullah/Documents/mcp",
-  "scanHash": "34335482098ca60f",
-  "testFiles": 7,
-  "totalBytes": 327812
+  "scanHash": "00d1ff6612de3e0a",
+  "testFiles": 8,
+  "totalBytes": 333865
 }

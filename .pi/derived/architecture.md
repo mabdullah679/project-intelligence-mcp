@@ -15,7 +15,7 @@
 | `(root)` | 8 | json, markdown, typescript, unknown | 0 | 0 | 0 |
 | `scripts` | 1 | javascript | 0 | 0 | 0 |
 | `src` | 53 | typescript | 1 | 0 | 0 |
-| `test` | 7 | typescript | 0 | 1 | 1 |
+| `test` | 8 | typescript | 0 | 1 | 1 |
 
 ## Layers (0 = foundational)
 

@@ -23,7 +23,7 @@
       "id": "src"
     },
     {
-      "fileCount": 7,
+      "fileCount": 8,
       "id": "test"
     }
   ],
@@ -39,6 +39,7 @@
     "test/determinism.test.ts",
     "test/graph.test.ts",
     "test/helpers.ts",
+    "test/regression.test.ts",
     "test/scan.test.ts",
     "test/tools.test.ts",
     "test/unit.test.ts"

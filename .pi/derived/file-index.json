@@ -689,7 +689,7 @@
     {
       "confidence": "high",
       "ext": ".ts",
-      "hash": "eab7adc73c0e",
+      "hash": "63ebef5d9558",
       "imports": [
         {
           "external": false,
@@ -705,31 +705,31 @@
         },
         {
           "external": false,
-          "line": 10,
+          "line": 9,
           "module": "../../store/authored.js",
           "resolved": null
         },
         {
           "external": false,
-          "line": 11,
+          "line": 10,
           "module": "../../domain/version.js",
           "resolved": null
         },
         {
           "external": false,
-          "line": 12,
+          "line": 11,
           "module": "../../util/tokens.js",
           "resolved": null
         },
         {
           "external": false,
-          "line": 13,
+          "line": 12,
           "module": "../../util/fsx.js",
           "resolved": null
         },
         {
           "external": false,
-          "line": 14,
+          "line": 13,
           "module": "./tokenize.js",
           "resolved": null
         }
@@ -739,80 +739,80 @@
       "isEntrypoint": false,
       "isTest": false,
       "lang": "typescript",
-      "loc": 363,
+      "loc": 361,
       "path": "src/core/context/compile.ts",
-      "size": 12354,
+      "size": 12316,
       "symbols": [
         {
           "exported": true,
           "kind": "interface",
-          "line": 16,
+          "line": 15,
           "name": "CompileInput"
         },
         {
           "exported": false,
           "kind": "const",
-          "line": 34,
+          "line": 32,
           "name": "W"
         },
         {
           "exported": false,
           "kind": "const",
-          "line": 49,
+          "line": 47,
           "name": "OVERSIZE_FRACTION"
         },
         {
           "exported": false,
           "kind": "interface",
-          "line": 51,
+          "line": 49,
           "name": "Candidate"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 61,
+          "line": 59,
           "name": "emptyBreakdown"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 65,
+          "line": 63,
           "name": "total"
         },
         {
           "exported": true,
           "kind": "function",
-          "line": 75,
+          "line": 73,
           "name": "compileContext"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 289,
+          "line": 287,
           "name": "fileDegrees"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 298,
+          "line": 296,
           "name": "buildAdjacency"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 311,
+          "line": 309,
           "name": "expandFromSeeds"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 334,
+          "line": 332,
           "name": "buildContent"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 351,
+          "line": 349,
           "name": "signatureView"
         }
       ]
@@ -937,7 +937,7 @@
     {
       "confidence": "high",
       "ext": ".ts",
-      "hash": "42d274ece1e9",
+      "hash": "1a6a7dfb5d24",
       "imports": [
         {
           "external": false,
@@ -951,9 +951,9 @@
       "isEntrypoint": false,
       "isTest": false,
       "lang": "typescript",
-      "loc": 53,
+      "loc": 75,
       "path": "src/core/evidence/diff.ts",
-      "size": 1725,
+      "size": 2580,
       "symbols": [
         {
           "exported": true,
@@ -962,15 +962,21 @@
           "name": "DiffEvidence"
         },
         {
+          "exported": false,
+          "kind": "const",
+          "line": 13,
+          "name": "SAFE_REF"
+        },
+        {
           "exported": true,
           "kind": "function",
-          "line": 15,
+          "line": 23,
           "name": "captureDiff"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 39,
+          "line": 61,
           "name": "parseNumstat"
         }
       ]
@@ -1023,34 +1029,176 @@
       ]
     },
     {
-      "confidence": "none",
+      "confidence": "high",
       "ext": ".ts",
-      "hash": "fb352b78089c",
-      "imports": [],
+      "hash": "62f464ee6bf4",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "../../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../domain/schemas.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../../domain/version.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "./tarjan.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "./modules.js",
+          "resolved": null
+        }
+      ],
       "isConfig": false,
       "isDoc": false,
       "isEntrypoint": false,
       "isTest": false,
       "lang": "typescript",
-      "loc": 0,
+      "loc": 129,
       "path": "src/core/graph/architecture.ts",
-      "size": 4468,
-      "symbols": []
+      "size": 4480,
+      "symbols": [
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 12,
+          "name": "buildArchitecture"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 87,
+          "name": "computeLayers"
+        }
+      ]
     },
     {
-      "confidence": "none",
+      "confidence": "high",
       "ext": ".ts",
-      "hash": "3f709c9eb2ab",
-      "imports": [],
+      "hash": "cddaf0307eca",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "../../config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "../../domain/schemas.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "../../domain/version.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "./tarjan.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "./manifests.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "./modules.js",
+          "resolved": null
+        }
+      ],
       "isConfig": false,
       "isDoc": false,
       "isEntrypoint": false,
       "isTest": false,
       "lang": "typescript",
-      "loc": 0,
+      "loc": 179,
       "path": "src/core/graph/dependencies.ts",
-      "size": 5468,
-      "symbols": []
+      "size": 6701,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 9,
+          "name": "INDEX_BASENAMES"
+        },
+        {
+          "exported": false,
+          "kind": "interface",
+          "line": 11,
+          "name": "Resolver"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 17,
+          "name": "buildResolver"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 31,
+          "name": "pickStem"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 37,
+          "name": "stripExt"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 51,
+          "name": "resolveImport"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 99,
+          "name": "resolvePythonRelative"
+        },
+        {
+          "exported": false,
+          "kind": "function",
+          "line": 114,
+          "name": "suffixResolve"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 130,
+          "name": "buildDependencyGraph"
+        }
+      ]
     },
     {
       "confidence": "high",
@@ -1200,7 +1348,7 @@
     {
       "confidence": "high",
       "ext": ".ts",
-      "hash": "21c35ebd2cf5",
+      "hash": "693e03539137",
       "imports": [
         {
           "external": false,
@@ -1211,36 +1359,30 @@
         {
           "external": false,
           "line": 1,
-          "module": "node:fs/promises",
-          "resolved": null
-        },
-        {
-          "external": false,
-          "line": 2,
           "module": "../../util/fsx.js",
           "resolved": null
         },
         {
           "external": false,
-          "line": 3,
+          "line": 2,
           "module": "../../util/json.js",
           "resolved": null
         },
         {
           "external": false,
-          "line": 4,
+          "line": 3,
           "module": "../../config/config.js",
           "resolved": null
         },
         {
           "external": false,
-          "line": 5,
+          "line": 4,
           "module": "../../store/manifest.js",
           "resolved": null
         },
         {
           "external": false,
-          "line": 6,
+          "line": 5,
           "module": "../../store/layout.js",
           "resolved": null
         }
@@ -1250,86 +1392,80 @@
       "isEntrypoint": false,
       "isTest": false,
       "lang": "typescript",
-      "loc": 161,
+      "loc": 151,
       "path": "src/core/init/scaffold.ts",
-      "size": 5672,
+      "size": 5394,
       "symbols": [
         {
           "exported": true,
           "kind": "interface",
-          "line": 8,
+          "line": 7,
           "name": "ScaffoldResult"
         },
         {
           "exported": true,
           "kind": "function",
-          "line": 19,
+          "line": 18,
           "name": "scaffold"
         },
         {
           "exported": true,
           "kind": "function",
-          "line": 57,
+          "line": 56,
           "name": "isInitialized"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 61,
+          "line": 60,
           "name": "seedOwnership"
-        },
-        {
-          "exported": true,
-          "kind": "function",
-          "line": 72,
-          "name": "isEmptyDir"
         },
         {
           "exported": false,
           "kind": "const",
-          "line": 80,
+          "line": 70,
           "name": "README"
         },
         {
           "exported": false,
           "kind": "const",
-          "line": 99,
+          "line": 89,
           "name": "ADR_GUIDE"
         },
         {
           "exported": false,
           "kind": "const",
-          "line": 119,
+          "line": 109,
           "name": "GLOSSARY_STUB"
         },
         {
           "exported": false,
           "kind": "const",
-          "line": 127,
+          "line": 117,
           "name": "OWNERSHIP_STUB"
         },
         {
           "exported": false,
           "kind": "const",
-          "line": 133,
+          "line": 123,
           "name": "INVARIANTS_STUB"
         },
         {
           "exported": false,
           "kind": "const",
-          "line": 140,
+          "line": 130,
           "name": "POLICIES_STUB"
         },
         {
           "exported": false,
           "kind": "const",
-          "line": 145,
+          "line": 135,
           "name": "REQUIREMENTS_STUB"
         },
         {
           "exported": false,
           "kind": "const",
-          "line": 150,
+          "line": 140,
           "name": "ROADMAP_STUB"
         }
       ]
@@ -2653,7 +2789,7 @@
     {
       "confidence": "high",
       "ext": ".ts",
-      "hash": "43d449d384e1",
+      "hash": "c22987c6bb0f",
       "imports": [
         {
           "external": false,
@@ -2703,9 +2839,9 @@
       "isEntrypoint": false,
       "isTest": false,
       "lang": "typescript",
-      "loc": 107,
+      "loc": 111,
       "path": "src/store/store.ts",
-      "size": 3526,
+      "size": 3744,
       "symbols": [
         {
           "exported": false,
@@ -2740,13 +2876,13 @@
         {
           "exported": false,
           "kind": "function",
-          "line": 87,
+          "line": 92,
           "name": "summarize"
         },
         {
           "exported": true,
           "kind": "function",
-          "line": 103,
+          "line": 107,
           "name": "relPaths"
         }
       ]
@@ -2754,7 +2890,7 @@
     {
       "confidence": "high",
       "ext": ".ts",
-      "hash": "a0c88de0bf26",
+      "hash": "db1591823c89",
       "imports": [
         {
           "external": false,
@@ -2795,6 +2931,12 @@
         {
           "external": false,
           "line": 6,
+          "module": "../core/graph/dependencies.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
           "module": "../core/context/compile.js",
           "resolved": null
         }
@@ -2804,14 +2946,14 @@
       "isEntrypoint": false,
       "isTest": false,
       "lang": "typescript",
-      "loc": 68,
+      "loc": 77,
       "path": "src/tools/context.ts",
-      "size": 2735,
+      "size": 3134,
       "symbols": [
         {
           "exported": true,
           "kind": "const",
-          "line": 13,
+          "line": 14,
           "name": "contextCompile"
         }
       ]
@@ -2890,7 +3032,7 @@
     {
       "confidence": "high",
       "ext": ".ts",
-      "hash": "8c92f07538f5",
+      "hash": "e3a3eaf6d1f8",
       "imports": [
         {
           "external": false,
@@ -2946,9 +3088,9 @@
       "isEntrypoint": false,
       "isTest": false,
       "lang": "typescript",
-      "loc": 89,
+      "loc": 92,
       "path": "src/tools/evidence.ts",
-      "size": 3675,
+      "size": 3723,
       "symbols": [
         {
           "exported": true,
@@ -3565,7 +3707,7 @@
     {
       "confidence": "high",
       "ext": ".ts",
-      "hash": "60354b75b6be",
+      "hash": "616bb346d90d",
       "imports": [
         {
           "external": false,
@@ -3579,9 +3721,9 @@
       "isEntrypoint": false,
       "isTest": false,
       "lang": "typescript",
-      "loc": 79,
+      "loc": 98,
       "path": "src/util/exec.ts",
-      "size": 2336,
+      "size": 3050,
       "symbols": [
         {
           "exported": true,
@@ -3590,21 +3732,33 @@
           "name": "ExecResult"
         },
         {
+          "exported": false,
+          "kind": "function",
+          "line": 15,
+          "name": "capture"
+        },
+        {
           "exported": true,
           "kind": "function",
-          "line": 20,
+          "line": 63,
           "name": "runCommand"
+        },
+        {
+          "exported": true,
+          "kind": "function",
+          "line": 78,
+          "name": "runArgv"
         },
         {
           "exported": false,
           "kind": "function",
-          "line": 69,
+          "line": 88,
           "name": "clamp"
         },
         {
           "exported": true,
           "kind": "function",
-          "line": 74,
+          "line": 93,
           "name": "tailLines"
         }
       ]
@@ -3814,7 +3968,7 @@
     {
       "confidence": "high",
       "ext": ".ts",
-      "hash": "1c711bd06c6b",
+      "hash": "09a7b8924036",
       "imports": [
         {
           "external": false,
@@ -3852,9 +4006,9 @@
       "isEntrypoint": false,
       "isTest": true,
       "lang": "typescript",
-      "loc": 47,
+      "loc": 46,
       "path": "test/context.test.ts",
-      "size": 1741,
+      "size": 1725,
       "symbols": [
         {
           "exported": false,
@@ -4018,6 +4172,95 @@
           "kind": "function",
           "line": 9,
           "name": "tmpRepoPath"
+        }
+      ]
+    },
+    {
+      "confidence": "high",
+      "ext": ".ts",
+      "hash": "22a0abaf4aff",
+      "imports": [
+        {
+          "external": false,
+          "line": 0,
+          "module": "vitest",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 1,
+          "module": "node:child_process",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 2,
+          "module": "node:fs/promises",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 3,
+          "module": "node:path",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 4,
+          "module": "node:url",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 5,
+          "module": "../src/core/scan/scan.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 6,
+          "module": "../src/core/graph/dependencies.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 7,
+          "module": "../src/config/config.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 8,
+          "module": "../src/core/evidence/diff.js",
+          "resolved": null
+        },
+        {
+          "external": false,
+          "line": 9,
+          "module": "./helpers.js",
+          "resolved": null
+        }
+      ],
+      "isConfig": false,
+      "isDoc": false,
+      "isEntrypoint": false,
+      "isTest": true,
+      "lang": "typescript",
+      "loc": 58,
+      "path": "test/regression.test.ts",
+      "size": 2906,
+      "symbols": [
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 11,
+          "name": "here"
+        },
+        {
+          "exported": false,
+          "kind": "const",
+          "line": 12,
+          "name": "PYREL"
         }
       ]
     },
