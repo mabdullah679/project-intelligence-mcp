@@ -25,6 +25,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:staging": "vitest run --config vitest.staging.config.ts",
     "postinstall": "node scripts/copy-grammars.mjs"
   },
   "dependencies": {
